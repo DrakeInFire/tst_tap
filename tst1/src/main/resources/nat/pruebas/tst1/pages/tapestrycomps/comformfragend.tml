@@ -1,0 +1,18 @@
+<html t:type="layout" title="Fragment Form"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+        <!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+
+	/ <t:pagelink page="Index">Index</t:pagelink>/
+		<t:pagelink page="tapestrycomps/Indexcomps">Components</t:pagelink>
+		
+	<p>
+	<h1>Personas introducidas</h1>
+	
+	
+	<t:grid source="personas"/>
+	</p>
+	
+    
+</html>

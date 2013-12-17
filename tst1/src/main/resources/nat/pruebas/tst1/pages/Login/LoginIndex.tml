@@ -1,0 +1,15 @@
+<html t:type="layout" title="Index"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+     
+      	/ <t:pagelink page="Index">Index</t:pagelink>/
+      	
+      <ul>
+      	<li><t:pagelink page="Login/Log">LoginPage</t:pagelink></li>
+      	<li><t:pagelink page="Login/PrivateZone">PrivateZone</t:pagelink></li>
+      	<li><t:pagelink page="Login/Setbyfile">SetUsersByFile</t:pagelink></li>
+      	<li><t:pagelink page="Login/ViewUsersFile">ViewUsersFile</t:pagelink></li>
+      </ul>
+      	
+</html>      	

@@ -1,0 +1,19 @@
+<html t:type="layout" title="Detail Person"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+        <!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+
+	/ <t:pagelink page="Index">Index</t:pagelink>/
+	<t:pagelink page="GTT/GTTIndex">GTT</t:pagelink>/
+		<t:pagelink page="GTT/ShowPersons">ShowPersons</t:pagelink> 
+	
+
+	<p>
+		<t:beandisplay object="person"/>
+	</p>
+	<p>
+		<t:actionlink t:id="delete" context="person.dni">delete</t:actionlink>
+	</p>
+	
+</html>

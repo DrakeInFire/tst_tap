@@ -1,0 +1,31 @@
+<html t:type="layout" title="Form Components"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+        <!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+
+	/ <t:pagelink page="Index">Index</t:pagelink>
+
+<ul>
+	<li><t:pagelink page="tapestrycomps/Comp1"> Checkbox</t:pagelink></li>
+
+	<li><t:pagelink page="tapestrycomps/comp2"> Checklist</t:pagelink></li>
+	
+	<li><t:pagelink page="tapestrycomps/compdate"> DateField</t:pagelink></li>
+	
+	<li><t:pagelink page="tapestrycomps/compformfrag"> FormFrag</t:pagelink></li>
+	
+	<li><t:pagelink page="tapestrycomps/passwordField"> PasswordField</t:pagelink></li>
+	
+	<li><t:pagelink page="tapestrycomps/Radios"> Radio/Radiogroup</t:pagelink></li>
+	
+	<li><t:pagelink page="tapestrycomps/Select"> Select </t:pagelink></li>
+	
+	<li><t:pagelink page="tapestrycomps/TextInput"> TextInput </t:pagelink></li>
+	
+	<li><t:pagelink page="tapestrycomps/Upload"> File upload </t:pagelink></li>
+	
+
+</ul>
+
+</html>

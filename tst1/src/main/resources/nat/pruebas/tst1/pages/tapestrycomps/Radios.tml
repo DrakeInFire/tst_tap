@@ -1,0 +1,65 @@
+<html t:type="layout" title="tst1 Index"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+      / <t:pagelink page="Index">Index</t:pagelink>/
+		<t:pagelink page="tapestrycomps/Indexcomps">Components</t:pagelink>
+      
+      <p><h1>Radio/RadioGroup</h1></p>
+      
+      <t:form>
+      	<table>
+      		<tr>
+      			<th>Component Name	</th>
+      			<th>Options	</th>
+      			<th>Submitted value	</th>
+      		</tr>
+      		<tr>
+      			<td class="name">Radio Group</td>
+      			<td>
+      				<t:RadioGroup value="RadioGroupValue">
+      					
+      					<t:radio t:id="RadioH" value="literal:H" label="High" type="radio" name="group"/><t:label for="radioH"/><br/>
+      					<t:radio t:id="RadioM" value="literal:M" label="Medium" type="radio" name="group"/><t:label for="radioM"/><br/>
+      					<t:radio t:id="RadioL" value="literal:L" label="Low" type="radio" name="group"/><t:label for="radioL"/><br/>
+      				
+      				</t:RadioGroup>
+      			</td>
+      			<td>${RadioGroupValue}</td>
+      				
+      				
+      		</tr>
+      		<tr>
+      			<td class="name">Independent Radios</td>
+      			<td>
+      					<t:RadioGroup value="Radio1">
+      						<t:radio t:id="RHigh" value="literal:High" label="High" type="radio"/><t:label for="RHigh"/><br/>
+      					</t:RadioGroup>
+      					<t:RadioGroup value="Radio2">
+      						<t:radio t:id="RMedium" value="literal:Medium" label="Medium" type="radio"/><t:label for="RMedium"/><br/>
+      					</t:RadioGroup>
+      					<t:RadioGroup value="Radio3">
+      						<t:radio t:id="RLow" value="literal:Low" label="Low" type="radio"/><t:label for="RLow"/><br/>
+      					</t:RadioGroup>
+      			</td>
+      			<td>
+      				${Radio1 }<br/>
+      				${Radio2 }<br/>
+      				${Radio3 }<br/>
+      				
+      			</td>
+      		
+      		
+      		</tr>
+      		
+      
+      	</table>
+      
+      	<input type="submit" value="submit"/>
+      
+      </t:form>
+      
+        
+	
+      
+ </html>

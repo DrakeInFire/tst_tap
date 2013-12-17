@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html t:type="layout" title="Component Param"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+      
+     	/ <t:pagelink page="Index">Index</t:pagelink>/
+     		<t:pagelink page="Libro/Index">Libro</t:pagelink>
+     		
+     		<p>
+     			Feliz navidad:
+     			<t:count end="5">Ho!</t:count>
+     		</p>
+      
+      
+</html>

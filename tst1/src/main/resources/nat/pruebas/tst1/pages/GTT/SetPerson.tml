@@ -1,0 +1,13 @@
+<html t:type="layout" title="InputPerson"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+        <!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+
+	/ <t:pagelink page="Index">Index</t:pagelink>/
+	<t:pagelink page="GTT/GTTIndex">GTT</t:pagelink> 
+
+	<p>
+		<t:beaneditform object="person" submitlabel="Insert"/>
+	</p> 
+</html>

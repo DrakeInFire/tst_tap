@@ -1,0 +1,21 @@
+<html t:type="layout" title="Database Entries"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+        <!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+	/ <t:pagelink page="Index">Index</t:pagelink>/
+		<t:pagelink page="GTT/GTTIndex">GTT</t:pagelink>
+		
+		
+		<h1>Tree browse</h1>
+		
+		<div class="eg">
+			<a t:type="eventlink" t:event="ClearExpansions">Clear Expansions</a><br/><br/>
+			<t:tree t:id="tree" model="stuffModel"/>
+			<a t:type="eventlink" t:event="Refresh" href="#">Refresh</a>
+		</div>
+		
+		<a t:type="eventlink" t:event="Home" href="#">Home</a>		
+		
+		
+</html>

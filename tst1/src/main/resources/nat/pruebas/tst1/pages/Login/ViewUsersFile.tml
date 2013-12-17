@@ -1,0 +1,32 @@
+<html t:type="layout" title="Index"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+      
+      	/ <t:pagelink page="Index">Index</t:pagelink>/
+      		<t:pagelink page="Login/Index">Login</t:pagelink>
+      		
+      <h1>View New Users From File</h1>
+      
+      
+      <p>
+      		<t:grid source="newusers" row="newuser" add="avalible,remove,add"> 
+      			<p:avalibleCell>
+      				${avalible }
+      			</p:avalibleCell>
+      			<p:removecell>
+      		   		<t:actionLink t:id="removerow" context="newuser.dni">Remove</t:actionLink>
+      			</p:removecell>
+      			<p:addCell>
+      				<t:if test="anexable">
+      					<t:actionLink t:id="addrow" context="newuser.dni">Add</t:actionLink>
+      				</t:if>
+      			</p:addCell>
+      		</t:grid>
+      </p>
+		<t:actionlink t:id="addall">Add All and Delete File</t:actionlink>
+		
+		<p><t:actionlink t:id="reload">Reload List</t:actionlink></p> 
+		<p><t:actionlink t:id="removefile">Eliminar fichero</t:actionlink></p>      
+    
+</html>

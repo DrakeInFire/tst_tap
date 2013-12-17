@@ -1,0 +1,52 @@
+<html t:type="layout" title="tst1 Index"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+        <!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+
+<body>
+	/ <t:pagelink page="Index">Index</t:pagelink>/
+		<t:pagelink page="tapestrycomps/Indexcomps">Components</t:pagelink>
+	
+	<p><h1>Fragmented Form</h1></p>
+	
+	<t:form t:id="persons">
+	
+		<t:errors/>
+		<div class="t-beaneditor">
+		
+			
+			
+			<t:formfragment t:id="FirstPerson" visible="show1">
+			
+				<h2>First Person</h2>
+				<t:beaneditor t:id="p1"/>
+				
+			</t:formfragment>
+			
+			<!--  
+			<t:checkbox t:id="show" t:mixins="triggerfragment" fragment="SecondPerson"/>
+			<label for="show"> Show Second Person</label>
+			-->
+			
+			<t:formfragment t:id="SecondPerson" visible="show2">
+				
+				<h2>Second Person</h2>				
+				<t:beaneditor t:id="p2"/>
+				
+			</t:formfragment>
+			
+			<div class="t-beaneditor-row">
+                <input type="submit" value="Continue"/>
+			</div>
+			
+		
+		</div>
+
+	</t:form>
+
+	
+</body>
+	
+
+</html>

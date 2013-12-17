@@ -1,0 +1,28 @@
+<html t:type="layout" title="tst1 Index"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+        <!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+
+<body>
+
+	/ <t:pagelink page="Index">Index</t:pagelink>/
+		<t:pagelink page="tapestrycomps/Indexcomps">Components</t:pagelink>
+		
+	<p><h1>Checklist</h1></p>
+	
+	<t:form>
+	
+	<t:checklist t:id="checklist" t:model="stationery" t:selected="checklistSelectedValues" 
+		t:encoder="stringValueEncoder"/>
+		
+		<p>${checklistSelectedValues}</p>
+		
+		<input type="submit" value="Submit"/>
+	</t:form>
+   
+   
+	
+
+</body>
+</html>

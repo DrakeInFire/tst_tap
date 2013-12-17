@@ -1,0 +1,14 @@
+<html t:type="layout" title="GTT-INDEX"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+        <!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+
+	/ <t:pagelink page="Index">Index</t:pagelink> 
+
+<ul>
+	<li><t:pagelink page="GTT/SetPerson">Set Person</t:pagelink></li>
+	<li><t:pagelink page="GTT/ShowPersons">Show Persons</t:pagelink></li>
+	<li><t:pagelink page="GTT/TreeBrowse">Tree Browse</t:pagelink></li>
+</ul> 
+</html>

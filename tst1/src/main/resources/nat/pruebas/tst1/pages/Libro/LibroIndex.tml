@@ -1,0 +1,16 @@
+<html t:type="layout" title="Index"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+     
+      	/ <t:pagelink page="Index">Index</t:pagelink>/
+		
+	<ul>
+		<li><t:pagelink page="Libro/HolaMundo">HolaMundo</t:pagelink></li>
+		<li><t:pagelink page="Libro/ComponentParam">Component Param(Count)</t:pagelink></li>
+	</ul>
+      
+      
+      
+      
+</html>

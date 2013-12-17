@@ -1,0 +1,16 @@
+<html t:type="layout" title="Index"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+     
+      	/ <t:pagelink page="Index">Index</t:pagelink>/
+      		<t:pagelink page="Login/Index">Login</t:pagelink>
+      		
+      	<p>
+      		<t:beaneditform object="login" submitlabel="Loggin"/>
+      	</p>
+      
+      	
+      	
+      	
+</html>      	

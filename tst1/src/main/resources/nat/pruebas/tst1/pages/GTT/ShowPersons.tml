@@ -1,0 +1,32 @@
+<html t:type="layout" title="Database Entries"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+        <!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+	/ <t:pagelink page="Index">Index</t:pagelink>/
+		<t:pagelink page="GTT/GTTIndex">GTT</t:pagelink>
+		
+		<p><h1>ShowPersons</h1></p> 
+
+	<p>
+		<t:grid source="persons" row="person" add="entry,delete" reorder="literal:entry,dni,nombre,apellido">
+			<p:apellidoCell>
+				<t:pagelink page="GTT/DetailPerson" context="person.dni">${person.apellido} </t:pagelink>
+			</p:apellidoCell>
+			<p:entrycell>
+				${rowIndex }
+			</p:entrycell>
+			<p:empty>
+				<p>There are no persons to display; you can<t:pagelink page="GTT/SetPerson">add some here</t:pagelink></p>
+			</p:empty>
+			<p:deleteCell>
+				<t:actionLink t:id="delete" context="person.dni">delete</t:actionLink>
+			</p:deleteCell>
+			
+		</t:grid>
+		<p><t:actionlink t:id="deleteall">Delete All Persons</t:actionlink></p>
+		
+		
+	</p>
+
+</html>

@@ -1,0 +1,32 @@
+<html t:type="layout" title="tst1 Index"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+      
+      / <t:pagelink page="Index">Index</t:pagelink>/
+		<t:pagelink page="tapestrycomps/Indexcomps">Components</t:pagelink>
+		
+		<p><h1>Select</h1></p>
+      
+      <t:form>
+      	<p><t:errors /></p>
+      	
+      	<p>
+      		<t:select t:id="carMaker" validate="required"
+      			zone="modelZone"/>
+      	</p>
+      	<p>
+      		<t:zone t:id="modelZone" id="modelZone">
+      			<t:if test="carMaker">
+      				<p><t:select t:id="carModel" model="avalibleModels" validate="required"/></p>
+      			</t:if>
+      		
+      		</t:zone>      	
+      	</p>
+      	<p><t:submit value="literal:Submit"/></p>
+      
+      </t:form>
+      
+      
+    
+ </html>
